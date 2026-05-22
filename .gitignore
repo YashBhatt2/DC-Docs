@@ -1,0 +1,11 @@
+# Ignore the Python virtual environment
+venv/
+.venv/
+env/
+
+# Ignore local MkDocs build outputs
+site/
+
+# Ignore OS-specific system files
+.DS_Store
+Thumbs.db

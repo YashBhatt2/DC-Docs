@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus DC++ Hub Guide</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, sans-serif; }
+        body { background-color: #0c0d10; color: #fff; overflow-x: hidden; }
+
+        /* Creates scroll depth to drive the animations */
+        .scroll-container { position: relative; height: 350vh; }
+
+        /* Keeps elements locked to screen while scrolling */
+        .sticky-frame {
+            position: sticky; top: 0; height: 100vh;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            overflow: hidden;
+        }
+
+        /* Centered logo styling */
+        .logo-container {
+            position: absolute; top: 6%; display: flex; justify-content: center; width: 100%;
+        }
+        .logo-img {
+            width: 130px; height: 130px; object-fit: contain;
+            filter: drop-shadow(0 0 20px rgba(181, 230, 29, 0.2));
+        }
+
+        /* Core Typography and Alignment */
+        .intro-text {
+            position: absolute; text-align: center; font-size: 3.5rem;
+            font-weight: 900; letter-spacing: -1px; width: 90%; max-width: 950px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+        }
+
+        /* Logo Green Color Sync */
+        .highlight { 
+            color: #b5e61d; 
+            text-shadow: 0 0 25px rgba(181, 230, 29, 0.6); 
+        }
+
+        /* New Community Text Blocks Structure */
+        .info-block {
+            margin-bottom: 30px; width: 100%; text-align: center;
+        }
+        .info-title {
+            font-size: 1.8rem; font-weight: 800; color: #b5e61d; margin-bottom: 8px;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .info-desc {
+            font-size: 1.2rem; font-weight: 400; color: #a0a5b5; max-width: 700px; margin: 0 auto 15px auto;
+            line-height: 1.5;
+        }
+        .cta-heading {
+            font-size: 1.5rem; letter-spacing: 2px; font-weight: 800; margin-top: 15px; margin-bottom: 10px;
+        }
+
+        /* Grid Alignment Fixes */
+        .os-grid {
+            display: flex; gap: 24px; justify-content: center; align-items: center;
+            margin-top: 20px; width: 100%; opacity: 0; pointer-events: none;
+        }
+        
+        .os-card {
+            background: #15171e; border: 1px solid #262936; padding: 18px 45px;
+            border-radius: 10px; text-decoration: none; color: #fff; font-weight: bold;
+            font-size: 1.3rem; transition: all 0.3s ease; text-align: center; min-width: 160px;
+        }
+        
+        /* Interactive Neon Hover Effects */
+        .os-card:hover {
+            border-color: #b5e61d; box-shadow: 0 0 20px rgba(181, 230, 29, 0.4);
+            transform: translateY(-5px);
+        }
+
+        /* Full screen overlay for smooth transition fading */
+        .fade-overlay {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background-color: #1F2128; z-index: 9999; opacity: 0; pointer-events: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fade-overlay" id="fadeOverlay"></div>
+
+    <div class="scroll-container">
+        <div class="sticky-frame">
+            
+            <div class="logo-container">
+                <img src="DC++ Logo.png" alt="DC++ Hub Logo" class="logo-img">
+            </div>
+
+            <div class="intro-text" id="text1">
+                DC++: The ultimate solution to the <span class="highlight">10GB LAN LIMIT</span>
+            </div>
+
+            <div class="intro-text" id="text2" style="opacity: 0;">
+                Download and upload files locally at blistering speeds.
+            </div>
+
+            <div class="intro-text" id="text3" style="opacity: 0;">
+                <div class="info-block">
+                    <div class="info-title">What is DC++?</div>
+                    <div class="info-desc">A decentralized, peer-to-peer file-sharing network connecting users directly over the local network.</div>
+                    
+                    <div class="info-title">Why use DC++?</div>
+                    <div class="info-desc">Bypass external internet throttling, sharing massive datasets instantly at full hardware line speeds without using data metrics.</div>
+
+                    <p class="info-desc" style="color: #fff; font-weight: 600; font-size: 1.3rem; margin-top: 25px;">
+                        To upload, download and grow the DC++ community in our college, <span class="highlight">BPHC</span>.
+                    </p>
+                </div>
+
+                <p class="cta-heading">GET STARTED</p>
+                <div class="os-grid" id="osGrid">
+                    <a href="site/windows/index.html" class="os-card transition-link">Windows</a>
+                    <a href="site/mac/index.html" class="os-card transition-link">macOS</a>
+                    <a href="site/linux/index.html" class="os-card transition-link">Linux</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Timeline syncing scrollbar behavior to the fade/scale rules
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".scroll-container",
+                start: "top top",
+                end: "bottom bottom",
+                scrub: 1
+            }
+        });
+
+        // Step 1: Scale and dismiss the LAN limit hook
+        tl.to("#text1", { scale: 1.4, opacity: 0, duration: 2 })
+          
+        // Step 2: Introduce and dismiss speeds highlight text
+          .to("#text2", { opacity: 1, scale: 1, duration: 2 })
+          .to("#text2", { scale: 1.4, opacity: 0, duration: 2 }, "+=1")
+          
+        // Step 3: Bring up the detailed information cards and interactive buttons
+          .to("#text3", { opacity: 1, duration: 2 })
+          .to("#osGrid", { opacity: 1, pointerEvents: "auto", duration: 1 }, "-=1");
+
+        // Custom script to intercept layout navigation and fade smoothly to #1F2128
+        document.querySelectorAll('.transition-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Stop standard abrupt page jumps
+                const destination = this.getAttribute('href');
+                const overlay = document.getElementById('fadeOverlay');
+                
+                overlay.style.pointerEvents = 'auto';
+                overlay.style.opacity = '1'; // Triggers smooth CSS transition opacity change
+                
+                // Route browser location only after color transition fade finishes (500ms)
+                setTimeout(() => {
+                    window.location.href = destination;
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
