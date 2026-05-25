@@ -1,0 +1,924 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="../mac/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Windows Guide - Campus DC++ Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#windows-dc-setup-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Campus DC++ Guide" class="md-header__button md-logo" aria-label="Campus DC++ Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Campus DC++ Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Windows Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Windows Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mac/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  macOS Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../linux/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Linux Guide
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Campus DC++ Guide" class="md-nav__button md-logo" aria-label="Campus DC++ Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Campus DC++ Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-download-and-firewall-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Download and Firewall Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mandatory-client-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Mandatory Client Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Mandatory Client Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personal Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sharing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-connecting-to-campus-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Connecting to Campus Hubs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Connecting to Campus Hubs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#active-hub-addresses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Hub Addresses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Community Links
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hardware-and-speed-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hardware and Speed Optimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-usage-and-troubleshooting-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Usage and Troubleshooting (FAQ)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Usage and Troubleshooting (FAQ)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-locate-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How do I locate files?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q-i-see-a-red-bar-on-my-client-icon-what-is-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q. I see a red bar on my client icon. What is wrong?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q-why-are-my-download-speeds-capped-or-extremely-slow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q. Why are my download speeds capped or extremely slow?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    macOS Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-download-and-firewall-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Download and Firewall Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mandatory-client-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Mandatory Client Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Mandatory Client Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#personal-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personal Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sharing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Downloads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-connecting-to-campus-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Connecting to Campus Hubs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Connecting to Campus Hubs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#active-hub-addresses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Active Hub Addresses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#community-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Community Links
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hardware-and-speed-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hardware and Speed Optimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-usage-and-troubleshooting-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Usage and Troubleshooting (FAQ)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Usage and Troubleshooting (FAQ)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-locate-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How do I locate files?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q-i-see-a-red-bar-on-my-client-icon-what-is-wrong" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q. I see a red bar on my client icon. What is wrong?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q-why-are-my-download-speeds-capped-or-extremely-slow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q. Why are my download speeds capped or extremely slow?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="windows-dc-setup-guide">Windows DC++ Setup Guide</h1>
+<h2 id="1-download-and-firewall-configuration">1. Download and Firewall Configuration</h2>
+<ol>
+<li>Download the DC++ client installer from the official source <a href="https://dcplusplus.sourceforge.io/download.html">link</a>.          </li>
+<li>Launch the application for the first time. If prompted by a Windows Security Alert regarding Windows Defender Firewall, check both <strong>Private networks</strong> and <strong>Public networks</strong>, then click <strong>Allow access</strong>.        </li>
+</ol>
+<p><em>Crucial Firewall Fix</em>
+    If you cannot connect or search after completing the setup, an external antivirus firewall (such as McAfee) or Windows Firewall is likely blocking the client. Disable any third-party antivirus firewalls and manually verify that DC++ is added to both the inbound and outbound program exception rules within Windows Defender Firewall.            </p>
+<hr />
+<h2 id="2-mandatory-client-settings">2. Mandatory Client Settings</h2>
+<p>The client should automatically open the settings menu upon the first launch. Configure the following parameters precisely across these specific categories:    </p>
+<h3 id="personal-information">Personal Information</h3>
+<ul>
+<li><strong>Nick:</strong> Set your unique username.    </li>
+<li><strong>Line speed (upload):</strong> Change this value to <code>1000</code> MB/s.    </li>
+<li><strong>Away mode settings:</strong> Uncheck "Enable away mode when the Windows session is locked". Set the field for "Enable away mode after..." to <code>0</code> minutes of inactivity to disable it.     </li>
+</ul>
+<h3 id="connectivity">Connectivity</h3>
+<ul>
+<li>Uncheck the first available checkbox under this section, which states "Let DC++ determine the best connectivity settings". This completely disables automatic connectivity setup.     </li>
+</ul>
+<h3 id="sharing">Sharing</h3>
+<ul>
+<li>Select the local folder on your storage drive that you want to share with the hub.      </li>
+<li><strong>Warning:</strong> Do not share personal or system Windows files under any circumstances.            </li>
+<li><strong>File Indexing &amp; Refreshing:</strong> Added files will only reflect on the hub after the client finishes hashing them. You can track this background process via <code>View -&gt; Indexing progress</code>. If you modify the contents of your shared folder and they do not show up, manually force an update via <code>File -&gt; Refresh file list</code>.       </li>
+</ul>
+<h3 id="downloads">Downloads</h3>
+<ul>
+<li>Set your default download directory path to match the exact same directory chosen in your Sharing settings. This ensures any completed file downloads are immediately reshared to the community.     </li>
+</ul>
+<h3 id="advanced">Advanced</h3>
+<ul>
+<li>Uncheck the setting: "Register with Windows to handle magnet...".      </li>
+<li>Check the setting: "Start DC++ when Windows starts".     </li>
+<li>Check the setting: "Add finished files to share instantly (if shared)".     </li>
+</ul>
+<hr />
+<h2 id="3-connecting-to-campus-hubs">3. Connecting to Campus Hubs</h2>
+<p>Once settings are applied and file indexing completes, connect to the active campus infrastructure using these steps:       </p>
+<ol>
+<li>Click on <code>File -&gt; Quick connect</code> from the top menu or use the keyboard shortcut <code>Ctrl + Q</code>.       </li>
+<li>Enter the target hub's IP address and connect.      </li>
+</ol>
+<h3 id="active-hub-addresses"><a href="https://swd.bits-hyderabad.ac.in/dcpphub_status/">Active Hub Addresses</a></h3>
+<h3 id="community-links">Community Links</h3>
+<ul>
+<li>Join the local hub community WhatsApp group for support and file requests: <a href="https://chat.whatsapp.com/G1WxkIIK9R5HYKVYDL9IV2">Whatsapp</a>.    </li>
+</ul>
+<hr />
+<h2 id="4-hardware-and-speed-optimization">4. Hardware and Speed Optimization</h2>
+<p>To achieve gigabit local network transfer speeds and bypass basic connection limitations, verify your physical layer connection:     </p>
+<ul>
+<li><strong>Ethernet Cable Spec:</strong> Ensure you are using a minimum specification of a <strong>Cat5e</strong> ethernet cable. The specification rating is printed directly on the outer sleeve of the cable.      </li>
+<li><strong>Type-C Adapters:</strong> If your laptop lacks an RJ45 port and requires a Type-C ethernet adapter, confirm that your hardware explicitly supports <code>1000/1000 Mbps</code> gigabit transfer rates. Cheap hardware adapters are frequently capped at <code>100/100 Mbps</code> hardware limits.      </li>
+<li><strong>Verifying Link Speed:</strong> In Windows, open <code>Settings -&gt; Network and Internet -&gt; Properties (of your Ethernet adapter)</code>. Confirm that the entry for <strong>Link speed (Receive/Transmit)</strong> reads exactly <code>1000/1000 (Mbps)</code>.      </li>
+</ul>
+<hr />
+<h2 id="5-usage-and-troubleshooting-faq">5. Usage and Troubleshooting (FAQ)</h2>
+<h3 id="how-do-i-locate-files">How do I locate files?</h3>
+<p>Click the magnifying glass icon located in the main system toolbar or press <code>Ctrl + S</code> on your keyboard to open the search utility. Download the files you need, and ensure they remain in your shared folder to distribute them to other peers.     </p>
+<h3 id="q-i-see-a-red-bar-on-my-client-icon-what-is-wrong">Q. I see a red bar on my client icon. What is wrong?</h3>
+<p>This indicates a connection failure. Re-verify that all properties match the exact criteria specified in Section 2. If the problem persists, review the Windows Firewall exceptions detailed in Section 1 to ensure inbound/outbound blocks are fully lifted, then attempt to reconnect.       </p>
+<h3 id="q-why-are-my-download-speeds-capped-or-extremely-slow">Q. Why are my download speeds capped or extremely slow?</h3>
+<p>Your connection is hitting a bottleneck below gigabit performance. Re-verify your hardware pipeline using the metrics outlined in Section 4 (Checking for suboptimal ethernet cables, sub-par Type-C adapters, or a network interface card negotiated down to 100 Mbps limits).     </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

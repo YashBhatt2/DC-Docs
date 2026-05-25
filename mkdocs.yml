@@ -10,9 +10,7 @@ theme:
     - content.code.copy
     - navigation.tabs
 
-
 nav:
-  - Welcome Page: index.html               
-  - Windows Guide: docs/windows.md
-  - macOS Guide: docs/macOS.md
-  - Linux Guide: docs/linux.md
+  - Windows Guide: windows.md
+  - macOS Guide: mac.md
+  - Linux Guide: linux.md
