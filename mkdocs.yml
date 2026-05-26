@@ -1,4 +1,5 @@
 site_name: Campus DC++ Guide
+site_url: https://dc-docs.lordoftheping.workers.dev/
 
 theme:
   name: material
