@@ -10,6 +10,8 @@ theme:
   features:
     - content.code.copy
     - navigation.tabs
+  extra:
+    homepage: https://dc-docs.lordoftheping.workers.dev/
 
 nav:
   - Windows Guide: windows.md
