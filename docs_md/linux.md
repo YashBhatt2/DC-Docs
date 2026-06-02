@@ -15,6 +15,7 @@ sudo pacman -S ncdc
 # For Debian/Ubuntu-based distributions:
 sudo apt install ncdc
 ```
+if ncdc isn't an already availaible package for your distro, follow this tutorial for installation: [link](https://dev.yorhel.nl/ncdc/install)     
 ## 2. Initial Application Setup
 NCDC is now ready to use. Open your terminal and type:      
 ```bash
