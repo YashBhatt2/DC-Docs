@@ -15,6 +15,7 @@ sudo pacman -S ncdc
 # For Debian/Ubuntu-based distributions:
 sudo apt install ncdc
 ```
+if ncdc isn't an already availaible package for your distro, follow this tutorial for installation: [link](https://dev.yorhel.nl/ncdc/install)
 ## 2. Initial Application Setup
 NCDC is now ready to use. Open your terminal and type:      
 ```bash
@@ -74,5 +75,5 @@ This will open in a new tab once again, and there you can navigate (similar to h
 - To update your shared items, so that what’s in the folder is reflected and available to other users, use: /refresh      
 - To chat with another user, use: /pm username. It will open in a new window.        
 - You can use /disconnect to disconnect from the hub.     
-- Join the [Whatsapp](placeholder)   
+- Join the [Facebook Group](https://www.facebook.com/groups/1221977228417399)   
 - Check [Active Hubs](https://swd.bits-hyderabad.ac.in/dcpphub_status/)    

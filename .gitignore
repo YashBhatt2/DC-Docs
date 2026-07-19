@@ -9,3 +9,6 @@ site/
 # Ignore OS-specific system files
 .DS_Store
 Thumbs.db
+
+# Personal Claude Code preferences (not shared)
+CLAUDE.local.md
