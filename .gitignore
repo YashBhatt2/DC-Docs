@@ -10,9 +10,5 @@ site/
 .DS_Store
 Thumbs.db
 
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
-.env*
-!.env.example
+# Personal Claude Code preferences (not shared)
+CLAUDE.local.md
